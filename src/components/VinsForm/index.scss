@@ -1,0 +1,25 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .form-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-error {
+    height: 16px;
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .vin-list {
+		display: flex;
+		cursor: pointer;
+  }
+
+  .vin-text {
+    margin: 0;
+  }
+}

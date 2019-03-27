@@ -1,7 +1,7 @@
 $btn-color: #3ba2ff;
 .button {
   background-color: $btn-color;
-  border: none;
+  border: 1px solid $btn-color;
   padding: .5em 1em;
   font-size: 1rem;
   color: #ffffff;
@@ -10,9 +10,11 @@ $btn-color: #3ba2ff;
 
   &:hover {
     background-color: lighten($btn-color, 10%);
+    border-color: lighten($btn-color, 10%);
   }
 
   &:active {
     background-color: darken($btn-color, 10%);
+    border-color: darken($btn-color, 10%);
   }
 }
