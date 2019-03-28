@@ -1,0 +1,21 @@
+.event-list-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  border: 1px solid #979797;
+
+  .event-list-filter {
+    color: #979797;
+    padding: 15px 30px;
+  }
+
+  .events-container {
+    overflow-y: auto;
+    max-height: calc(100vh - 60px);
+
+    .car-event {
+      margin: 0 30px 30px;
+    }
+  }
+}

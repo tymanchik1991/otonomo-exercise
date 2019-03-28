@@ -11,6 +11,7 @@ class Streamer {
   generator
   timeRange
   isStreaming = false
+  timer
   handlers = []
 
   constructor(dataGenerator, timeRange = DEFAULT_TIME_RANGE_IN_MS) {
@@ -33,7 +34,8 @@ class Streamer {
   runTriggers() {
     const [min, max] = this.timeRange
     const timeout = faker.random.number({ min, max })
-    setTimeout(() => {
+    clearTimeout(this.timer)
+    this.timer = setTimeout(() => {
       if (this.isStreaming) {
         this.trigger()
         this.runTriggers()

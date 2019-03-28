@@ -14,6 +14,11 @@
     margin-left: 10px;
   }
 
+  .form-list {
+    display: flex;
+    flex-direction: column;
+  }
+
   .vin-list {
 		display: flex;
 		cursor: pointer;

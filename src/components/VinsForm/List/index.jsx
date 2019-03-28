@@ -1,10 +1,13 @@
-import React from 'react';
-import Checkbox from '../../Checkbox';
+import React from 'react'
+import Checkbox from '../../Checkbox'
 
-import '../index.scss';
+import '../index.scss'
 
-export default (p) => (
-		<Checkbox checked={p.checked} value={p.checked} onChange={() => p.onCheck(p.text)}>
-			{p.text}
-		</Checkbox>
+export default p => (
+  <Checkbox
+    checked={p.checked}
+    value={p.checked}
+    onChange={() => p.onCheck(p.text)}>
+    <span style={{ color: p.color }}>{p.text}</span>
+  </Checkbox>
 )
